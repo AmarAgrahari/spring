@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd ">
+
+ <bean id="emp" class="com.model1.Employee">
+<constructor-arg value="101"></constructor-arg>
+<constructor-arg value="Ravic"></constructor-arg>
+<constructor-arg><ref bean="emp1"></ref></constructor-arg>
+ </bean>
+ 
+  <bean id="emp1" class="com.model1.Address">
+ <constructor-arg value="noida"></constructor-arg>
+
+ </bean>
+</beans>

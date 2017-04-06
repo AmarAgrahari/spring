@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd ">
+
+ <bean id="emp" class="com.model.Employee">
+<property name="eid" value="101"></property>
+<property name="name" value="Ravic"></property>
+<property name="add" ref="emp1"></property>
+ </bean>
+ 
+  <bean id="emp1" class="com.model.Address">
+<property name="city" value="noida"></property>
+
+ </bean>
+</beans>
